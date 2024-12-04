@@ -9,8 +9,6 @@
   - [Requirements](#requirements)
   - [Process](#process)
 - [:bulb: Help](#bulb-help)
-  - [Additional information](#additional-information)
-  - [Real-time conversation](#real-time-conversation)
 
 ## :mailbox: Milestone Delivery Process
 
@@ -60,24 +58,8 @@ As part of the grant program, we allow everyone to participate in the evaluation
 
 ## :bulb: Help
 
-### Additional information
-
-| <img src="src/web.png?s=50" width="50"> | <img src="src/twitter.png?s=50" width="50"> | <img src="src/medium.png?s=50" width="50"> | <img src="src/like.png?s=50" width="50"> | <img src="src/reddit.png?s=50" width="50"> | <img src="src/youtube-play.png?s=50" width="50"> |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
-
-### Real-time conversation
-
-We have a Matrix channel for grant-related questions and activities. Head over there to ask grants-related questions, share your experience with other applications and grantees, or simply hang out:
-
-- [W3F Grants Community](https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&via=matrix.org)
-
-We also have Matrix/Element channels for real-time discussions on Web3 and Polkadot. Join the conversation!
-
-- [Web3 Foundation Chat](https://matrix.to/#/#w3f:matrix.org)
-- [Polkadot Space](https://matrix.to/#/#polkadot:web3.foundation)
-- [Kusama Space](https://matrix.to/#/#kusama:web3.foundation)
+If you have any questions, feedback or concerns about this program, please open an issue on the application repository. One of the curators will get back to you as soon as possible. Alternatively, we have a Matrix channel for grant-related questions and activities. Head over there to ask grants-related questions, share your experience with other applications and grantees, or simply hang out: [Polkadot Open Source Developer Grants Program](https://matrix.to/#/#OSDGP:matrix.org)
 
 ## :information_source: License <!-- omit in toc -->
 
-[Apache License 2.0](LICENSE) © Web3 Foundation
+[Apache License 2.0](LICENSE)
