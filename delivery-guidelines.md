@@ -4,11 +4,7 @@ These are the guidelines to be followed for milestones submitted for evaluation.
 
 ## Submission
 
-Unless instructed otherwise, please submit all your milestones via PR to the [Grant Milestone Delivery repository](https://github.com/w3f/Grant-Milestone-Delivery).
-
-## Invoice
-
-After a milestone is reviewed and accepted, you can submit your invoice alongside your delivery pull request through [this form](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform).
+Unless instructed otherwise, please submit all your milestones via PR to this repository (https://github.com/PolkadotOpenSourceGrants/delivery).
 
 ## Content
 
@@ -25,12 +21,9 @@ The submission should contain the following information:
 
 ### License
 
-Since all code developed under a grant must be open source, it is necessary to publish your code under an appropriate license. This license should already be defined in your grant application, but if you're unsure, check the [Open Source Initiative database](https://opensource.org/licenses) for available licenses. We prefer Apache 2.0, but MIT or Unlicense are also acceptable.
-If your delivery comprises multiple repositories, make sure to include the license in each of them.
+It is necessary to publish your code under an appropriate license. This license should already be defined in your grant application, but if you're unsure, check the [Open Source Initiative database](https://opensource.org/licenses) for available licenses. Apache 2.0, MIT and Unlicense are popular choices. If your delivery comprises multiple repositories, make sure to include the license in each of them.
 
-:::danger
-You should also verify that the code you submit doesn't violate any other licenses, as a failure to comply with the license of reused code will result in an immediate rejection of the milestone and termination of the grant.
-:::
+**You should also verify that the code you submit doesn't violate any other licenses, as a failure to comply with the license of reused code will result in an immediate rejection of the milestone and termination of the grant.**
 
 ### Documentation
 
@@ -38,8 +31,8 @@ We value high-quality open source code, but even the most performant code is of 
 
 We require that you document (where applicable):
 
-- API calls
 - Architecture overview and individual component details
+- API calls
 - Algorithms and protocols that are core to your project
 - Any other fundamental building blocks to your technology
 
@@ -51,9 +44,9 @@ Unless absolutely necessary, make the documentation public as well, ideally as p
 
 A codebase that is easy to read is also easy to use. We suggest adopting one style from Day 1 and adhering to it across the entire team. This helps to keep the commit history clean and facilitates any reviews of the introduced changes.
 
-For **Substrate**, we strongly recommend formatting your code according to the [official guidelines](https://github.com/paritytech/substrate/blob/master/docs/STYLE_GUIDE.md).
+For **Polkadot SDK**, we strongly recommend formatting your code according to the [official guidelines](https://github.com/paritytech/polkadot-sdk/blob/master/substrate/docs/STYLE_GUIDE.md).
 
-For **Rust**, we encourage formatting any additional support libraries or helpers by following the [Style Guidelines](https://doc.rust-lang.org/1.0.0/style/README.html).
+For **Rust**, we encourage formatting any additional support libraries or helpers by following the [Style Guidelines](https://doc.rust-lang.org/nightly/style-guide/).
 
 For **any other** deliveries, please commit to a particular style & let us know which official guidelines you adopt.
 
@@ -84,7 +77,7 @@ We prefer `Dockerfile`s to avoid problems with versions and dependencies.
 
 ### Milestone Deliverables
 
-Please provide a list of milestone deliverables. This list should closely reflect the list of deliverables agreed on in the pull request for grant application (or in Annex 1 of the grant contract for the private applications).
+Please provide a list of milestone deliverables. This list should closely reflect the list of deliverables agreed on in the pull request for the grant application.
 
 Each item in the list should include a link to the deliverable itself, e.g.:
 
@@ -92,9 +85,7 @@ Each item in the list should include a link to the deliverable itself, e.g.:
 - a link to a file in a public repository (include the appropriate file/folder in the link),
 - a link to a specific commit, pull request or issue in a public repository.
 
-:::tip
 **Please highlight anything that deviates from the contract** and include further information that you think is relevant to the deliverable, either alongside the appropriate deliverable or under [Additional Information](#additional-information).
-:::
 
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- | ------------- |
