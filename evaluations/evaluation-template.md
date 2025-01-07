@@ -1,9 +1,7 @@
 # Evaluation
 
-> Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with `>`, such as this one, can be removed.
-
 - **Status:** In Progress/Accepted/Rejected
-- **Application Document:** Please, provide a link to the merged contract (the `.md` file in the [applications](https://github.com/PolkadotOpenSourceGrants/apply) repository). 
+- **Application Document:** Link to the merged contract (the `.md` file in the [applications](https://github.com/PolkadotOpenSourceGrants/apply) repository). 
 - **Milestone:** Number
 
 | Deliverable | Accepted | Link | Evaluation Notes |
