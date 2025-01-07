@@ -21,6 +21,6 @@ The milestone delivery process is part of the [Polkadot Open Source Developer Gr
 
 If you have any questions, feedback or concerns about this program, please open an issue on the application repository. One of the curators will get back to you as soon as possible. Alternatively, we have a Matrix channel for bounty-related questions and activities. Head over there to ask general questions, share your experience with other applicants and grantees, or simply hang out: [Polkadot Open Source Developer Grants Program](https://matrix.to/#/#OSDGP:matrix.org)
 
-## :information_source: License <!-- omit in toc -->
+## License <!-- omit in toc -->
 
 [Apache License 2.0](LICENSE)
