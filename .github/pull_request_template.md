@@ -1,9 +1,8 @@
 # Milestone Delivery Checklist
 
-- [x] The [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md) has been copied and updated.
+- [x] The [delivery template](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/deliveries/milestone-delivery-template.md) has been copied and updated.
 - [ ] This pull request is being made by the same account as the accepted application.
 - [ ] I have disclosed any and all sources of reused code in the submitted repositories and have done my due diligence to meet its license requirements.
-- [ ] In case of acceptance, invoices must be submitted and payments will be transferred to the Polkadot AssetHub and/or fiat account provided in the application.
-- [ ] The delivery is according to the [Guidelines for Milestone Deliverables](https://grants.web3.foundation/docs/Support%20Docs/milestone-deliverables-guidelines).
+- [ ] The delivery is according to the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md).
 
-Link to the application pull request: https://github.com/w3f/Grants-Program/pull/XXX < please fill this in with the PR number of your application.
+Link to the application pull request: https://github.com/PolkadotOpenSourceGrants/apply/pull/XXX < please fill this in with the PR number of your application.
