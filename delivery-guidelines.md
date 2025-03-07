@@ -1,12 +1,20 @@
-# Milestone Delivery Guidelines
+# 📋 Milestone Delivery Guidelines
 
-These are the guidelines to be followed for milestones submitted for evaluation.
+These are the guidelines to be followed for milestones submitted for evaluation in the Polkadot Fast-Grants Programme.
 
-## Submission
+## ⏱️ Important Timeframes
 
-Unless instructed otherwise, please submit all your milestones via PR to this repository (https://github.com/PolkadotOpenSourceGrants/delivery).
+- Each milestone is capped at **$5,000 USD**
+- Milestones must be delivered within **3 months** of approval
+- Milestone evaluation will be completed within **14 days**
+- If a milestone is not accepted, you will have **one opportunity** to fix and resubmit within 14 days
+- Partial delivery of milestones is **not acceptable**
 
-## Content
+## 📤 Submission
+
+Please submit all your milestones via PR to this repository (https://github.com/Polkadot-Fast-Grants/delivery).
+
+## 📝 Content
 
 The submission should contain the following information:
 
@@ -19,13 +27,13 @@ The submission should contain the following information:
 - **A list of the [milestone deliverables](#milestone-deliverables)**
 - **Any [additional information](#additional-information)**
 
-### License
+### 📜 License
 
-It is necessary to publish your code under an appropriate license. This license should already be defined in your grant application, but if you're unsure, check the [Open Source Initiative database](https://opensource.org/licenses) for available licenses. Apache 2.0, MIT and Unlicense are popular choices. If your delivery comprises multiple repositories, make sure to include the license in each of them.
+It is necessary to publish your code under an appropriate license. Check the [Open Source Initiative database](https://opensource.org/licenses) for available licenses. Apache 2.0, MIT and Unlicense are popular choices. If your delivery comprises multiple repositories, make sure to include the license in each of them.
 
 **You should also verify that the code you submit doesn't violate any other licenses, as a failure to comply with the license of reused code will result in an immediate rejection of the milestone and termination of the grant.**
 
-### Documentation
+### 📚 Documentation
 
 We value high-quality open source code, but even the most performant code is of little use if it lacks proper documentation.
 
@@ -40,7 +48,7 @@ Unless absolutely necessary, make the documentation public as well, ideally as p
 
 **Note**: Only focus on your **own** contributions. Do not write detailed explanations of already existing components, including Substrate, ink!, or IPFS.
 
-### Formatted code
+### 💻 Formatted code
 
 A codebase that is easy to read is also easy to use. We suggest adopting one style from Day 1 and adhering to it across the entire team. This helps to keep the commit history clean and facilitates any reviews of the introduced changes.
 
@@ -50,7 +58,7 @@ For **Rust**, we encourage formatting any additional support libraries or helper
 
 For **any other** deliveries, please commit to a particular style & let us know which official guidelines you adopt.
 
-### Testing Guide
+### 🧪 Testing Guide
 
 We require that each milestone delivery includes a comprehensive test suite, consisting of:
 
@@ -75,7 +83,7 @@ We prefer `Dockerfile`s to avoid problems with versions and dependencies.
 
 **Note**: If you are not delivering code as part of your project, such a test suite is not applicable. This mainly applies to projects centering on design, research or hardware. If that is the case, please provide detailed instructions on how else we can test/run/replicate your deliverable.
 
-### Milestone Deliverables
+### 🎯 Milestone Deliverables
 
 Please provide a list of milestone deliverables. This list should closely reflect the list of deliverables agreed on in the pull request for the grant application.
 
@@ -95,6 +103,6 @@ Each item in the list should include a link to the deliverable itself, e.g.:
 | 1. | ... | ... | ... |
 | 2. | ... | ... | ... |
 
-### Additional Information
+### ℹ️ Additional Information
 
-Please add any additional comments that you consider relevant for the evaluation.
+Please add any additional comments that you consider relevant for the evaluation. Remember that the Fast-Grants Programme is designed as a first step for promising projects. Consider mentioning your plans for continuing development beyond this initial funding.
