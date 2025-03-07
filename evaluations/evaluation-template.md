@@ -1,7 +1,7 @@
 # Evaluation
 
 - **Status:** In Progress/Accepted/Rejected
-- **Application Document:** Link to the merged contract (the `.md` file in the [applications](https://github.com/PolkadotOpenSourceGrants/apply) repository). 
+- **Application Document:** Link to the merged contract (the `.md` file in the [applications](https://github.com/Polkadot-Fast-Grants/apply) repository). 
 - **Milestone:** Number
 
 | Deliverable | Accepted | Link | Evaluation Notes |
