@@ -4,11 +4,11 @@
 
 The milestone delivery process is part of the [Polkadot Fast-Grants Programme](https://github.com/Polkadot-Fast-Grants/). You can find the application process [here](https://github.com/Polkadot-Fast-Grants/apply).  
 
-⚠️ Before you submit a milestone, make sure it complies with our [delivery guidelines](`deliveries/delivery-guidelines.md`).
+⚠️ Before you submit a milestone, make sure it complies with our [delivery guidelines](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/deliveries/milestone-delivery-template.md).
 
 1. **Milestone Delivery:** 📤
    1. [Fork]([https://github.com/PolkadotFastGrants/delivery/fork](https://github.com/Polkadot-Fast-Grants/delivery/fork)) this repository with the **same GitHub account** that you used to submit the application.
-   2. In the newly created fork, create a copy of the milestone delivery template ([`deliveries/milestone-delivery-template.md`](deliveries/milestone-delivery-template.md)). Make sure you **do not modify the template file directly**. 
+   2. In the newly created fork, create a copy of the milestone delivery template ([`deliveries/milestone-delivery-template.md`](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/deliveries/milestone-delivery-template.md)). Make sure you **do not modify the template file directly**. 
    3. Fill out the template with the details of your milestone, including all deliverables as listed in your application.
    4. Name the file `project_name-milestone_number.md`.
    5. Create a pull request and fill out the PR template.
