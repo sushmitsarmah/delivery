@@ -8,6 +8,7 @@
 
 * **Application Document:** Please provide a link to your merged application (the `.md` file in the [applications](https://github.com/Polkadot-Fast-Grants/apply/tree/master/applications) directory).
 * **Milestone Number:** e.g. 1
+* **DOT Payment Address:** Please provide the payment beneficiary address on Polkadot Hub.
 
 **Context** (optional)
 > Please provide a short paragraph or two connecting the deliverables in this milestone and describing their purpose.
