@@ -1,0 +1,109 @@
+name: Handle Delivery PR Submission (by PR author link lookup)
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  update-internal-reviews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Token Check
+        run: |
+          echo "Token exists: ${{ secrets.PRIVATE_REPO_PAT != '' }}"
+
+      - name: Process PR for Internal Reviews
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PRIVATE_REPO_PAT }}
+          script: |
+            const pr = context.payload.pull_request;
+            const prAuthor = pr.user.login;
+            const prUrl = pr.html_url;
+            
+            const owner = 'Polkadot-Fast-Grants';
+            const repo = 'Internal-Reviews';
+
+            console.log(`🔎 Searching for Internal Review issue linked to a PR by @${prAuthor}...`);
+
+            // Fetch all open issues
+            const issues = await github.paginate(
+              github.rest.issues.listForRepo,
+              {
+                owner,
+                repo,
+                state: 'open',
+                per_page: 100
+              }
+            );
+
+            let matchingIssue = null;
+
+            // Helper function to extract PR references like owner/repo#123
+            const extractPrRefs = (text) => {
+              const regex = /Polkadot-Fast-Grants\/(\w+)#(\d+)/g;
+              let matches = [];
+              let match;
+              while ((match = regex.exec(text)) !== null) {
+                matches.push({ repo: match[1], number: parseInt(match[2], 10) });
+              }
+              return matches;
+            };
+
+            for (const issue of issues) {
+              const prRefs = extractPrRefs(issue.body || "");
+
+              // Also check comments on the issue
+              const comments = await github.paginate(
+                github.rest.issues.listComments,
+                {
+                  owner,
+                  repo,
+                  issue_number: issue.number,
+                  per_page: 100
+                }
+              );
+
+              for (const comment of comments) {
+                prRefs.push(...extractPrRefs(comment.body || ""));
+              }
+
+              for (const prRef of prRefs) {
+                console.log(`🔗 Found PR reference: ${prRef.repo}#${prRef.number}`);
+                try {
+                  const prData = await github.rest.pulls.get({
+                    owner: 'Polkadot-Fast-Grants',
+                    repo: prRef.repo,
+                    pull_number: prRef.number
+                  });
+
+                  if (prData.data.user.login === prAuthor) {
+                    matchingIssue = issue;
+                    console.log(`✅ Match found in Issue #${issue.number}: "${issue.title}"`);
+                    break;
+                  }
+                } catch (error) {
+                  console.error(`❌ Failed to fetch PR ${prRef.repo}#${prRef.number}: ${error.message}`);
+                }
+              }
+
+              if (matchingIssue) break;
+            }
+
+            if (!matchingIssue) {
+              console.error(`❌ No matching issue found for author @${prAuthor}`);
+              return;
+            }
+
+            console.log(`✏️ Commenting on Issue #${matchingIssue.number}...`);
+            // Comment on the matching issue
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: matchingIssue.number,
+              body: `🚚 A new delivery PR has been submitted by @${prAuthor}: ${prUrl}`
+            });
+
+            console.log(`🚚 Moving Issue to Delivered / Awaiting Evaluation...`);
+
+            // (Project moving logic would be here — see previous message — after you plug projectId, fieldId, etc.)
