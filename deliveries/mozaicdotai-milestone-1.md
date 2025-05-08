@@ -7,22 +7,26 @@
 **The delivery is according to the official [milestone delivery guidelines](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/delivery-guidelines.md).**  
 
 * **Application Document:** Please provide a link to your merged application (the `.md` file in the [applications](https://github.com/Polkadot-Fast-Grants/apply/tree/master/applications) directory).
-* **Milestone Number:** e.g. 1
+[MozaicDotAI Merged Application](https://github.com/Polkadot-Fast-Grants/apply/blob/master/applications/mozaicdot.md)
+* **Milestone Number:** 1
 
 **Context** (optional)
-> Please provide a short paragraph or two connecting the deliverables in this milestone and describing their purpose.
+This milestone delivers the integration of MozaicNFT api to create, edit, delete, buy and sell nfts.
 
-**Deliverables**
-> Please provide a list of all deliverables of the milestone extracted from the initial application and a link to the deliverable itself. Ideally all links inside the below table should include a commit hash, which will be used for testing. If you don't provide a commit hash, we will work off the default branch of your repository. Thus, if you plan on continuing work after delivery, we suggest you create a separate branch for either the delivery or your continuing work.
-> 
-> Remember that milestone payments are capped at $5,000 USD and must be delivered within 3 months of approval.
-> 
-> If there is anything particular about any of the deliverables we or a future reader should know, use the respective `Notes` column.
+**Pre-Deliverables**
 
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
-| 1. | ... |...| ...| 
-| 2.  | ... |...| ...| 
+| 1. | License |[LICENSE](https://github.com/sushmitsarmah/MozaicDotAI/blob/main/LICENSE)| MIT License | 
+| 2.  | Documentation |[README.md](https://github.com/sushmitsarmah/MozaicDotAI/blob/main/README.md)| Includes architecture, features, and usage instructions| 
+| 3.  | Testing Guide |[TESTING.md](https://github.com/sushmitsarmah/MozaicDotAI/blob/main/TESTING.md)| Instructions for setup, usage, and testing the platform| 
+
+
+**Deliverables**
+
+| Number | Deliverable | Link | Notes |
+| ------------- | ------------- | ------------- |------------- |
+| 1. | Integration of MozaicNFT api to create, edit, delete, buy and sell nfts |[Live Preview]()| Website that allows creation, edit, deletion, buy and sell nfts | 
 
 **Additional Information**
 > Any further comments on the milestone that you would like to share with us.
