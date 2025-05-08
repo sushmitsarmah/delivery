@@ -3,7 +3,7 @@
 * **Name of the grant project:** Polkadot API Playground  
 * **Application Document:** [Polkadot API Playground Application](https://github.com/Polkadot-Fast-Grants/apply/pull/4)
 * **Milestone Number:** 1
-
+* **DOT Payment Address:** 13eJfzT8u1qKYkFDW6o7Ta19eGi9X8Y74cWLDComEVxbKGMa
 
 ## Context
 
