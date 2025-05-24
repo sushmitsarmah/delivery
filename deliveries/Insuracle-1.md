@@ -8,7 +8,7 @@
 
 * **Application Document:** https://github.com/danielabrahamx/apply
 * **Milestone Number:**  1
-* **DOT Payment Address:** Please provide the payment beneficiary address on Polkadot Hub.
+* **DOT Payment Address:** Polkadot Asset Hub wallet address: 14KjvUGLgres227Ziay5KFQ8kQv2szikbTEHWVtEJZ1dZLgh
 
 **Context** (optional)
 > This milestone delivers the foundational components of Insuracle, a parametric insurance platform built on Polkadot. The deliverables include the core smart contracts for cyber breach insurance policies, comprehensive documentation and testing infrastructure, and an introductory article explaining the project's concept and achievements. These components establish the MVP foundation for automated, transparent insurance policies triggered by verifiable oracle data, specifically focusing on cyber breach events monitored through dark web data feeds.
@@ -24,7 +24,7 @@
 | ------------- | ------------- | ------------- |------------- |
 | 0a. | License |[MIT](https://github.com/devdan98/Insuracle/blob/master/LICENSE)| We are using MIT license| 
 | 0b.  | Documentation |https://github.com/devdan98/Insuracle/blob/master/README.md| ...| 
-| 0c.  | Testing and Testing Guide |https://1drv.ms/v/c/d0b099b87ce047c3/EaH9fr7IHgZMuxY4MwbwdhMB-Pr-KjErWSj5XUVIscT88Q?e=dGFWXN|Testing guide is a combination of the README.md and this tutorial video| 
+| 0c.  | Testing and Testing Guide |https://1drv.ms/v/c/d0b099b87ce047c3/EaH9fr7IHgZMuxY4MwbwdhMB-Pr-KjErWSj5XUVIscT88Q?e=dGFWXN|The testing guide is a combination of the README.md and this tutorial video| 
 | 0d.  | Article |...| ...| 
 | 1.  | Core Contracts |https://github.com/devdan98/Insuracle/blob/master/contracts/Insuracle.sol| ...| 
 
