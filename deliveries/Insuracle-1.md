@@ -32,4 +32,6 @@
 > Any further comments on the milestone that you would like to share with us.
 > Testing Verification:
 All deliverables have been thoroughly tested and can be verified by following the testing guide. The contracts demonstrate full functionality for policy creation, state management, and mock payout scenarios as specified in the original grant application.
+> Future Development:
+Following this milestone, we plan to continue development with Milestone 2, which will include the frontend dApp and full oracle integration. The foundation established in this delivery provides a solid base for expanding to additional parametric insurance products and eventual mainnet deployment.
 > Note: After submission, your milestone will be evaluated within 14 days. If changes are needed, you will have one opportunity to fix and resubmit within 14 days.
