@@ -23,10 +23,10 @@
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
 | 0a. | License |[MIT](https://github.com/devdan98/Insuracle/blob/master/LICENSE)| We are using MIT license| 
-| 0b.  | Documentation |https://github.com/devdan98/Insuracle/blob/master/README.md| ...| 
+| 0b.  | Documentation |https://github.com/devdan98/Insuracle/blob/master/README.md|
 | 0c.  | Testing and Testing Guide |https://1drv.ms/v/c/d0b099b87ce047c3/EaH9fr7IHgZMuxY4MwbwdhMB-Pr-KjErWSj5XUVIscT88Q?e=dGFWXN|The testing guide is a combination of the README.md and this tutorial video| 
-| 0d.  | Article |...| ...| 
-| 1.  | Core Contracts |https://github.com/devdan98/Insuracle/blob/master/contracts/Insuracle.sol| ...| 
+| 0d.  | Article |https://tinyurl.com/24xuxhh9| 
+| 1.  | Core Contracts |https://github.com/devdan98/Insuracle/blob/master/contracts/Insuracle.sol|
 
 **Additional Information**
 > Any further comments on the milestone that you would like to share with us.
