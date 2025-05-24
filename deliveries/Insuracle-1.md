@@ -11,7 +11,7 @@
 * **DOT Payment Address:** Polkadot Asset Hub wallet address: 14KjvUGLgres227Ziay5KFQ8kQv2szikbTEHWVtEJZ1dZLgh
 
 **Context** (optional)
-> This milestone delivers the foundational components of Insuracle, a parametric insurance platform built on Polkadot. The deliverables include the core smart contracts for cyber breach insurance policies, comprehensive documentation and testing infrastructure, and an introductory article explaining the project's concept and achievements. These components establish the MVP foundation for automated, transparent insurance policies triggered by verifiable oracle data, specifically focusing on cyber breach events monitored through dark web data feeds.
+> This milestone delivers the foundational components of Insuracle, a parametric insurance platform built on Polkadot. The deliverables include the core smart contracts for flood insurance policies, comprehensive documentation and testing infrastructure, and an introductory article explaining the project's concept and achievements. These components establish the MVP foundation for automated, transparent insurance policies triggered by verifiable oracle data, specifically focusing on flood events monitored through government database.
 
 **Deliverables**
 > Please provide a list of all deliverables of the milestone extracted from the initial application and a link to the deliverable itself. Ideally all links inside the below table should include a commit hash, which will be used for testing. If you don't provide a commit hash, we will work off the default branch of your repository. Thus, if you plan on continuing work after delivery, we suggest you create a separate branch for either the delivery or your continuing work.
