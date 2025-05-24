@@ -22,7 +22,7 @@
 
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
-| 0a. | License |...| ...| 
+| 0a. | License |MIT| We are using MIT license| 
 | 0b.  | Documentation |...| ...| 
 | 0c.  | Testing and Testing Guide |...| ...| 
 | 0d.  | Article |...| ...| 
