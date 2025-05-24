@@ -11,7 +11,7 @@
 * **DOT Payment Address:** Please provide the payment beneficiary address on Polkadot Hub.
 
 **Context** (optional)
-> Please provide a short paragraph or two connecting the deliverables in this milestone and describing their purpose.
+> This milestone delivers the foundational components of Insuracle, a parametric insurance platform built on Polkadot. The deliverables include the core smart contracts for cyber breach insurance policies, comprehensive documentation and testing infrastructure, and an introductory article explaining the project's concept and achievements. These components establish the MVP foundation for automated, transparent insurance policies triggered by verifiable oracle data, specifically focusing on cyber breach events monitored through dark web data feeds.
 
 **Deliverables**
 > Please provide a list of all deliverables of the milestone extracted from the initial application and a link to the deliverable itself. Ideally all links inside the below table should include a commit hash, which will be used for testing. If you don't provide a commit hash, we will work off the default branch of your repository. Thus, if you plan on continuing work after delivery, we suggest you create a separate branch for either the delivery or your continuing work.
@@ -30,5 +30,6 @@
 
 **Additional Information**
 > Any further comments on the milestone that you would like to share with us.
->
+> Testing Verification:
+All deliverables have been thoroughly tested and can be verified by following the testing guide. The contracts demonstrate full functionality for policy creation, state management, and mock payout scenarios as specified in the original grant application.
 > Note: After submission, your milestone will be evaluated within 14 days. If changes are needed, you will have one opportunity to fix and resubmit within 14 days.
