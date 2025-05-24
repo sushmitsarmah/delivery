@@ -22,8 +22,11 @@
 
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
-| 1. | ... |...| ...| 
-| 2.  | ... |...| ...| 
+| 0a. | License |...| ...| 
+| 0b.  | Documentation |...| ...| 
+| 0c.  | Testing and Testing Guide |...| ...| 
+| 0d.  | Article |...| ...| 
+| 1.  | Core Contracts |...| ...| 
 
 **Additional Information**
 > Any further comments on the milestone that you would like to share with us.
