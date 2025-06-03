@@ -3,7 +3,7 @@
 **The delivery is according to the official [milestone delivery guidelines](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/delivery-guidelines.md).**  
 
 * **Name of the grant project:** Polkadot API Playground  (Papi Simulator)  
-* **Application Document:** [Polkadot API Playground Application](https://github.com/Polkadot-Fast-Grants/apply/pull/4)
+* **Application Document:** [Polkadot API Playground Application](https://github.com/Polkadot-Fast-Grants/apply/blob/master/applications/papi-simulator.md)
 * **Milestone Number:** 2
 * **DOT Payment Address:** [13eJfzT8u1qKYkFDW6o7Ta19eGi9X8Y74cWLDComEVxbKGMa](https://polkadot.subscan.io/account/13eJfzT8u1qKYkFDW6o7Ta19eGi9X8Y74cWLDComEVxbKGMa)
 
