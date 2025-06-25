@@ -26,7 +26,7 @@
 | 0a. | License |[MIT](https://github.com/devdan98/Insuracle/blob/master/LICENSE)| MIT license| 
 | 0b.  | Documentation |[README.md](https://github.com/devdan98/Insuracle/blob/master/README.md)|Updated documentation covering frontend and oracle integration| 
 | 0c.  | Testing and Testing Guide |https://www.youtube.com/watch?v=XpYmJdu-wj4|Complete end-to-end testing demonstration| 
-| 0d.  | Article |[Project Article](https://tinyurl.com/24xuxhh9)|Article covering Milestone 2 achievements| 
+| 0d.  | Article |[Project Article](https://tinyurl.com/24xuxhh9)|Article| 
 | 2.  | Basic Frontend dApp |https://www.youtube.com/watch?v=XpYmJdu-wj4|Enhanced web interface with improved UI/UX| 
 | 3.  | Oracle Integration & Payout |https://www.youtube.com/watch?v=XpYmJdu-wj4|Live USGS API integration and automated payouts|
 
