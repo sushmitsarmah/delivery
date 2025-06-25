@@ -12,7 +12,7 @@
 * **DOT Payment Address:** Polkadot Asset Hub wallet address: 14KjvUGLgres227Ziay5KFQ8kQv2szikbTEHWVtEJZ1dZLgh
 
 **Context** (optional)
-> This milestone delivers the foundational components of Insuracle, a parametric insurance platform built on Polkadot. The deliverables include the core smart contracts for flood insurance policies, comprehensive documentation and testing infrastructure, and an introductory article explaining the project's concept and achievements. These components establish the MVP foundation for automated, transparent insurance policies triggered by verifiable oracle data, specifically focusing on flood events monitored through government database.
+> This milestone delivers the complete frontend dApp and live oracle integration for Insuracle's parametric flood insurance product, now branded as "Paramify". Building on the core smart contracts from Milestone 1, this delivery provides a fully functional end-to-end user experience with real-time USGS flood data integration. The system demonstrates the complete user journey from policy purchase to automated payout execution based on live flood level data from Washington DC monitoring stations.
 
 **Deliverables**
 > Please provide a list of all deliverables of the milestone extracted from the initial application and a link to the deliverable itself. Ideally all links inside the below table should include a commit hash, which will be used for testing. If you don't provide a commit hash, we will work off the default branch of your repository. Thus, if you plan on continuing work after delivery, we suggest you create a separate branch for either the delivery or your continuing work.
@@ -34,7 +34,7 @@ Technical Achievements:
 
 Live Oracle Integration: Successfully integrated real-time USGS flood level data from Washington DC monitoring stations, updating every 5 minutes to provide accurate, verifiable parametric triggers for insurance policies.
 
-Enhanced Frontend Experience: Delivered a significantly improved UI/UX with dual interfaces optimized for both insurance providers (insurers) and customers, featuring intuitive policy management, real-time data visualization, and seamless wallet connectivity.
+Enhanced Frontend Experience: Delivered a significantly improved UI/UX with dual interface optimized for both insurance providers (insurers) and customers, featuring intuitive policy management, real-time data visualization, and seamless wallet connectivity.
 
 Complete User Flow: Demonstrated full end-to-end functionality including policy funding by insurers, insurance purchase by customers, live threshold monitoring, breach detection, and automated payout execution - all verified through testnet transactions.
 
