@@ -22,7 +22,7 @@ $5,000
 
 > If there is anything particular about any of the deliverables we or a future reader should know, use the respective `Notes` column.
 
-dApp: https://uinter.net/
+dApp: https://anarchy.build/
 GitHub: https://github.com/anarchybuild/anarchy/tree/main
 Demo Vid: https://drive.google.com/file/d/1NTAOfaGkqB9Nopn_nHBX-6Ku2A-v7b4e/view
 
