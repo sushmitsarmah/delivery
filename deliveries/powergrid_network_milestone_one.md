@@ -67,3 +67,34 @@ The delivered contracts create a complete ecosystem where homeowners can registe
 **Testing**: All 14 unit tests pass successfully, covering device registration, grid event participation, token operations, and governance workflows. The test suite can be executed with `./scripts/test-all.sh` in the repository root.
 
 **Build System**: Complete build automation is provided with optimized WASM compilation, comprehensive error handling, and development environment setup scripts.
+
+
+
+## 🔬 How to Test Milestone 1
+
+To reproduce the results of Milestone 1 on a clean Linux environment:
+
+1. **Run setup script** (installs Rust, wasm target, cargo-contract v5.0.1, substrate-contracts-node):
+   ```bash
+   ./scripts/setup.sh
+   ```
+
+2. **Start a local Substrate contracts node** in a separate terminal:
+   ```bash
+   ./scripts/run-node.sh
+   ```
+
+3. **Build all contracts**:
+   ```bash
+   ./scripts/build-all.sh
+   ```
+
+4. **Run all unit and integration tests**:
+   ```bash
+   ./scripts/test-all.sh
+   ```
+
+If all steps succeed, you should see:
+- Optimized WASM artifacts generated in `target/ink/<contract_name>/`
+- ✅ Build success messages for each contract
+- ✅ Test results showing all 14 unit tests and 5 integration tests passing
