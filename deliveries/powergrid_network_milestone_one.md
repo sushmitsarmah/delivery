@@ -4,7 +4,7 @@
 
 * **Application Document:** https://github.com/Polkadot-Fast-Grants/apply/pull/10
 * **Milestone Number:** 1
-* **DOT Payment Address:** 1U3JboaBjPViEFDwwzKpFLVeV2LHQx9Jy31FuMgHuRBnmxq
+* **Polkadot Asset Hub Address:** 1U3JboaBjPViEFDwwzKpFLVeV2LHQx9Jy31FuMgHuRBnmxq
 
 **Context**
 
@@ -18,16 +18,18 @@ The delivered contracts create a complete ecosystem where homeowners can registe
 | ------------- | ------------- | ------------- |------------- |
 | 0a. | License | [MIT License](https://github.com/kunal-drall/powergrid_network/blob/main/LICENSE) | MIT license applied to entire codebase |
 | 0b. | Documentation | [Complete README.md](https://github.com/kunal-drall/powergrid_network/blob/main/README.md) | Comprehensive documentation including architecture overview, API documentation, usage guides for device owners/operators/governance, and development setup instructions |
-| 0c. | Testing and Testing Guide | [Test Suite](https://github.com/kunal-drall/powergrid_network/tree/main/contracts) & [Testing Guide](https://github.com/kunal-drall/powergrid_network/blob/main/README.md#-testing) | 14 comprehensive unit tests across all contracts (5 for Resource Registry, 3 for Grid Service, 6 for PowerGrid Token). Run with `./scripts/test-all.sh` |
+| 0c. | Testing and Testing Guide | [Test Suite](https://github.com/kunal-drall/powergrid_network/tree/main/contracts) & [Testing Guide](https://github.com/kunal-drall/powergrid_network/blob/main/README.md#-testing) | **19 comprehensive tests**: 14 unit tests across all contracts (5 for Resource Registry, 3 for Grid Service, 6 for PowerGrid Token) + **5 integration tests** validating complete user journey and cross-contract interactions. Run with `./scripts/test-all.sh` |
 | 1. | Smart Contract Development | [Smart Contracts](https://github.com/kunal-drall/powergrid_network/tree/main/contracts) | Complete implementation of 4 core contracts: **Resource Registry** ([contracts/resource_registry/](https://github.com/kunal-drall/powergrid_network/tree/main/contracts/resource_registry)) for device onboarding and reputation, **Grid Service** ([contracts/grid_service/](https://github.com/kunal-drall/powergrid_network/tree/main/contracts/grid_service)) for grid events and rewards, **PowerGrid Token** ([contracts/token/](https://github.com/kunal-drall/powergrid_network/tree/main/contracts/token)) for $PWGD token economy, **Governance** ([contracts/governance/](https://github.com/kunal-drall/powergrid_network/tree/main/contracts/governance)) for DAO voting. All written in **ink! v5.1**, with optimized WASM artifacts and comprehensive test coverage |
 
 **Technical Achievements**
 
 - **4 Production-Ready Smart Contracts**: Complete implementation with cross-contract integration
-- **14 Comprehensive Unit Tests**: 100% test coverage across all critical functionality  
+- **19 Comprehensive Tests**: 14 unit tests + 5 integration tests with 100% test coverage across all critical functionality  
+- **Complete User Journey Validation**: Integration tests verify the full user journey from device registration → grid participation → reward distribution → governance participation
 - **65% WASM Optimization**: Efficient contracts (12-18KB optimized binaries)
 - **Type-Safe Architecture**: Zero unsafe operations, comprehensive error handling
 - **Build Automation**: Complete CI/CD ready infrastructure with `./scripts/build-all.sh`
+- **Integration Test Suite**: Real validation of cross-contract interactions without placeholder assertions
 - **Development Environment**: Ready for local testing and testnet deployment
 
 **Contract Specifications**
@@ -56,19 +58,42 @@ The delivered contracts create a complete ecosystem where homeowners can registe
    - Parameter update capabilities for network management
    - Complete governance lifecycle implementation
 
+**Integration Test Validation**
+
+The milestone includes **comprehensive integration tests** that validate the complete user journey as requested by community feedback:
+
+1. **`test_complete_user_journey()`** - Validates all 5 steps of the user flow:
+   - ✅ User registers device in ResourceRegistry with stake
+   - ✅ Admin creates grid event in GridService 
+   - ✅ User participates in grid event with energy contribution
+   - ✅ Participation verified and rewards distributed via Token contract
+   - ✅ User stakes tokens and participates in governance
+
+2. **`test_data_flow_integration()`** - Tests complete data flow across all contracts
+3. **`test_error_handling_integration()`** - Validates error scenarios across the system
+4. **`test_scalability_integration()`** - Tests system scalability with multiple users/events
+5. **`test_cross_contract_integration()`** - Verifies cross-contract interactions and state consistency
+
+**Run integration tests with:**
+```bash
+cd contracts/integration-tests
+cargo test --verbose
+```
+
+
 **Additional Information**
 
-**Development Status**: Milestone 1 is complete and production-ready. All smart contracts have been built, tested, and optimized for deployment. The codebase includes comprehensive documentation, automated testing, and deployment scripts.
+**Development Status**: Milestone 1 is complete and production-ready. All smart contracts have been built, tested, and optimized for deployment. The codebase includes comprehensive documentation, automated testing, deployment scripts, and **real integration tests** that validate the complete user journey without placeholder assertions.
+
+**Community Feedback Integration**: The integration tests directly address community feedback requesting validation of the complete user journey. The `test_complete_user_journey()` function provides concrete proof that all contract interactions work together as designed.
 
 **Next Steps**: Milestone 2 will focus on smart device integration, connecting real hardware (smart plugs/sensors) to the blockchain infrastructure delivered in Milestone 1.
 
-**Repository Status**: The main branch contains the complete Milestone 1 deliverables with commit hash `[latest-commit-hash]` representing the final delivery state.
+**Repository Status**: The main branch contains the complete Milestone 1 deliverables with commit hash representing the final delivery state including integration tests.
 
-**Testing**: All 14 unit tests pass successfully, covering device registration, grid event participation, token operations, and governance workflows. The test suite can be executed with `./scripts/test-all.sh` in the repository root.
+**Testing**: All 19 tests pass successfully (14 unit + 5 integration), covering device registration, grid event participation, token operations, governance workflows, and complete user journey validation. The test suite can be executed with `./scripts/test-all.sh` in the repository root.
 
 **Build System**: Complete build automation is provided with optimized WASM compilation, comprehensive error handling, and development environment setup scripts.
-
-
 
 ## 🔬 How to Test Milestone 1
 
@@ -94,7 +119,13 @@ To reproduce the results of Milestone 1 on a clean Linux environment:
    ./scripts/test-all.sh
    ```
 
+5. **Run integration tests**:
+   ```bash
+   ./scripts/test-integration.sh
+   ```
+
 If all steps succeed, you should see:
 - Optimized WASM artifacts generated in `target/ink/<contract_name>/`
 - ✅ Build success messages for each contract
 - ✅ Test results showing all 14 unit tests and 5 integration tests passing
+
