@@ -7,6 +7,7 @@
 **The delivery is according to the official [milestone delivery guidelines](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/delivery-guidelines.md).**  
 
 * **Application Document:** [MozaicDotAI Merged Application](https://github.com/Polkadot-Fast-Grants/apply/blob/master/applications/mozaicdot.md)
+* **Github Repo:** [https://github.com/sushmitsarmah/mozaic_dot_nfts](https://github.com/sushmitsarmah/mozaic_dot_nfts)
 * **Milestone Number:** 1
 * **DOT Payment Address:** 13znEYUNP7g5GuBHoYf9PxHNGjFH9tFKj7ghRkuqg81GJoor
 
