@@ -31,8 +31,8 @@ The platform now supports the full NFT lifecycle from creation to trading with r
 | 1c. | Multi-Network NFT Trading |[Gallery & Trade History](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/src/pages/Gallery.tsx)| Real blockchain NFT trading across 6 Polkadot networks with authentic trade history via NFT Mozaic API |
 | 1d. | OpenSea Metadata Standard |[Metadata Implementation](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/src/web3/services/ipfs/pinata.ts)| Implementation of OpenSea metadata format with image, description, and attributes as per NFT Mozaic standards |
 | 1e. | Network-Aware Collection Discovery |[Network Integration](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/src/components/NetworkSelector.tsx)| Dynamic collection discovery across Asset Hub networks (Kusama, Polkadot, Unique, Westend, Rococo, Opal) |
-| 1f. | Advanced Caching & Performance |[Cache Utility](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/frontend/src/lib/utils/cache.ts)| Intelligent caching system with configurable TTL optimized for NFT Mozaic API calls and IPFS metadata |
-| 1g. | Professional NFT Marketplace |[Live Demo](https://mozaicdot-frontend.web.app/)| Production-ready NFT marketplace implementing NFT Mozaic challenge requirements with responsive design and PWA capabilities |
+| 1f. | Advanced Caching & Performance |[Cache Utility](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/src/lib/utils/cache.ts)| Intelligent caching system with configurable TTL optimized for NFT Mozaic API calls and IPFS metadata |
+| 1g. | Professional NFT Marketplace |[Live Demo](https://mozaic-dot-nfts.vercel.app/)| Production-ready NFT marketplace implementing NFT Mozaic challenge requirements with responsive design and PWA capabilities |
 
 **Deliverables**
 
