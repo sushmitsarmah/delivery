@@ -17,7 +17,7 @@ This milestone delivers the complete integration of [**NFT Mozaic API**](https:/
 - **Real Blockchain Integration**: Replaced mock data with actual blockchain queries using Unique SDK for authentic NFT trading, ownership validation, and trade history
 - **IPFS Storage**: Complete Pinata IPFS integration for decentralized storage of NFT images and metadata with JWT authentication and API key fallback
 - **Advanced Caching System**: Implemented intelligent caching with configurable TTL for collections (2 min), IPFS metadata (1 hour), and network stats (30 sec) to optimize performance
-- **Professional Rebranding**: Complete transformation from NexusArt to MozaicDot with comprehensive SEO optimization, favicon integration, and PWA-ready configuration
+- **SEO Updates**: Complete update of MozaicDot with comprehensive SEO optimization, favicon integration, and PWA-ready configuration
 - **Enhanced UX**: Responsive network selector, real-time trade history, proper error handling, and mobile-optimized interface
 
 The platform now supports the full NFT lifecycle from creation to trading with real blockchain interactions across multiple Polkadot networks.
