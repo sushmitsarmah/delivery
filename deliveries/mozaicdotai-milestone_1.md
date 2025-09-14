@@ -6,8 +6,7 @@
 
 **The delivery is according to the official [milestone delivery guidelines](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/delivery-guidelines.md).**  
 
-* **Application Document:** Please provide a link to your merged application (the `.md` file in the [applications](https://github.com/Polkadot-Fast-Grants/apply/tree/master/applications) directory).
-[MozaicDotAI Merged Application](https://github.com/Polkadot-Fast-Grants/apply/blob/master/applications/mozaicdot.md)
+* **Application Document:** [MozaicDotAI Merged Application](https://github.com/Polkadot-Fast-Grants/apply/blob/master/applications/mozaicdot.md)
 * **Milestone Number:** 1
 * **DOT Payment Address:** 13znEYUNP7g5GuBHoYf9PxHNGjFH9tFKj7ghRkuqg81GJoor
 
