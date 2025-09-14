@@ -61,6 +61,6 @@ The platform now supports the full NFT lifecycle from creation to trading with r
 - Tailwind CSS for responsive design
 - Advanced caching system optimized for NFT Mozaic API performance
 
-**Production Status**: The platform is fully functional and production-ready with live deployment at https://mozaicdot-frontend.web.app/ demonstrating all NFT marketplace capabilities across multiple Polkadot networks.
+**Production Status**: The platform is fully functional and production-ready with live deployment at [**MozaicDot Live App**](https://mozaic-dot-nfts.vercel.app/) demonstrating all NFT marketplace capabilities across multiple Polkadot networks.
 
 > Note: After submission, your milestone will be evaluated within 14 days. If changes are needed, you will have one opportunity to fix and resubmit within 14 days.
