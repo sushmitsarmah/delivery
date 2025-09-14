@@ -9,6 +9,7 @@
 * **Application Document:** Please provide a link to your merged application (the `.md` file in the [applications](https://github.com/Polkadot-Fast-Grants/apply/tree/master/applications) directory).
 [MozaicDotAI Merged Application](https://github.com/Polkadot-Fast-Grants/apply/blob/master/applications/mozaicdot.md)
 * **Milestone Number:** 1
+* **DOT Payment Address:** 13znEYUNP7g5GuBHoYf9PxHNGjFH9tFKj7ghRkuqg81GJoor
 
 **Context**
 This milestone delivers the complete integration of [**NFT Mozaic API**](https://wiki.nftmozaic.com/docs/category/developers/) enabling full NFT marketplace functionality on the Polkadot ecosystem. The implementation fulfills the Polkadot NFTMozaic Consensus Hong Kong 2025 Challenge requirements and includes:
