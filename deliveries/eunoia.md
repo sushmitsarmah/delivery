@@ -31,12 +31,12 @@ As the Polkadot team deprecated older tools and introduced new builds with criti
 
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
-| 0a. | License | https://github.com/JY20/eunoia/tree/polkadot-m1 | MIT licenses are included in the GitHub repository. | 
-| 0b.  | Documentation | https://github.com/JY20/eunoia/tree/polkadot-m1 | Separate README files are provided for different components, along with a main README for users and a tutorial file. | 
-| 0c.  | Testing and Testing Guide | https://github.com/JY20/eunoia/tree/polkadot-m3 | The majority of the work is completed, final updates are in progress. | 
+| 0a. | License | https://github.com/JY20/eunoia/blob/polkadot-m1/tutorial/tutorial.md | MIT licenses are included in the GitHub repository. | 
+| 0b.  | Documentation | https://github.com/JY20/eunoia/blob/polkadot-m1/tutorial/tutorial.md | Separate README files are provided for different components, along with a main README for users and a tutorial file. | 
+| 0c.  | Testing and Testing Guide | https://github.com/JY20/eunoia/blob/polkadot-m1/tutorial/tutorial.md | The majority of the work is completed, final updates are in progress. | 
 | 0d.  | Article | https://github.com/JY20/eunoia/tree/polkadot-m3 | The majority of the work is completed, final updates are in progress. | 
-| 1.  | Mainnet Smart Contract Launch | https://github.com/JY20/eunoia/tree/polkadot-m1 | Instead of using Ink! v6 (due to its instability in the alpha stage), the Polkadot team instructed us to adopt PAPI. The contract is available in the eunoia2 repo, but alternative approaches are recommended for stability. | 
-| 2.  | Mainnet UI + API Launch | https://github.com/JY20/eunoia/tree/polkadot-m1 | The mainnet UI is complete and integrated with PAPI instead of Polkadot-JS. | 
+| 1.  | Mainnet Smart Contract Launch | https://github.com/JY20/eunoia/blob/polkadot-m1/tutorial/tutorial.md | Instead of using Ink! v6 (due to its instability in the alpha stage), the Polkadot team instructed us to adopt PAPI. The contract is available in the eunoia2 repo, but alternative approaches are recommended for stability. See tutorial.md to test this deliverable. | 
+| 2.  | Mainnet UI + API Launch | https://github.com/JY20/eunoia/blob/polkadot-m1/tutorial/tutorial.md | The mainnet UI is complete and integrated with PAPI instead of Polkadot-JS. See tutorial.md to test this deliverable. | 
 | 3.  | Compass Launch | https://github.com/JY20/eunoia/tree/polkadot-m2 | Completed as part of Milestone 2. | 
 | 4.  | Charities Onboarding | https://github.com/JY20/eunoia/tree/polkadot-m3 | The majority of the work is completed, final updates are in progress. | 
 | 5.  | Users Onboarding | https://github.com/JY20/eunoia/tree/polkadot-m3 | The majority of the work is completed, final updates are in progress. | 
