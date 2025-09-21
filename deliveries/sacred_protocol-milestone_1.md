@@ -15,11 +15,10 @@ All instructions can be found in the ReadMe.
 
 | Number | Deliverable | Link | Notes |
 | ------ | ----------- | ---- | ----- |
-| 0a | LICENSE | [Contract](https://github.com/Sacred-Protocol/sacred-core-polkadot/blob/0564a8fb3709838c958ca3c03fa287461994443c/LICENSE) <br> [CLI](https://github.com/Sacred-Protocol/sacred-cli-polkadot/blob/ecdd4ce172f3785a9d3ca953cd6fa40b481ee62f/LICENSE) | MIT License |
-| 0b | Documentation | [Contract](https://github.com/Sacred-Protocol/sacred-core-polkadot/blob/0564a8fb3709838c958ca3c03fa287461994443c/README.md) <br> [CLI](https://github.com/Sacred-Protocol/sacred-cli-polkadot/blob/ecdd4ce172f3785a9d3ca953cd6fa40b481ee62f/README.md) | A more user-friendly tutorial will be released as part of Milestone 2 with the user interface. |
-| 0c | Testing and Testing Guide | [Contract](https://github.com/Sacred-Protocol/sacred-core-polkadot/blob/0564a8fb3709838c958ca3c03fa287461994443c/test/SacredEscrow.test.js) <br> [CLI](https://github.com/Sacred-Protocol/sacred-cli-polkadot/blob/ecdd4ce172f3785a9d3ca953cd6fa40b481ee62f/README.md) | The contract folder contains the test suite. The CLI package goes through real transactions on the deployed contract. |
-| 1 | Smart Contracts with Escrow logic to send & claim tips | [Contract](https://github.com/Sacred-Protocol/sacred-core-polkadot/tree/0564a8fb3709838c958ca3c03fa287461994443c) <br> [CLI](https://github.com/Sacred-Protocol/sacred-cli-polkadot/tree/ecdd4ce172f3785a9d3ca953cd6fa40b481ee62f) | In the application proposal, part of the verification mentions authenticating with Twitter. This has been omitted in the delivery as we cannot do oAuth on-chain. Twitter authentication will be part of the next Milestone with the FrontEnd UI. |
-
+| 0a | LICENSE | [Contract](https://github.com/Sacred-Protocol/sacred-core-polkadot/blob/master/LICENSE) <br> [CLI](https://github.com/Sacred-Protocol/sacred-cli-polkadot/blob/master/LICENSE) | MIT License |
+| 0b | Documentation | [Contract](https://github.com/Sacred-Protocol/sacred-core-polkadot/blob/master/README.md) <br> [CLI](https://github.com/Sacred-Protocol/sacred-cli-polkadot/blob/master/README.md) | ReadMe & includes in-line code documentation. Demo/Tutorial video: https://www.youtube.com/watch?v=AFUjuqFenoI |
+| 0c | Testing and Testing Guide | [Contract](https://github.com/Sacred-Protocol/sacred-core-polkadot/blob/master/test/SacredEscrow.test.js) <br> [CLI](https://github.com/Sacred-Protocol/sacred-cli-polkadot/blob/master/README.md) | The contract folder contains the test suite. The CLI package goes through real transactions on the deployed contract. |
+| 1 | Smart Contracts with Escrow logic to send & claim tips | [Contract](https://github.com/Sacred-Protocol/sacred-core-polkadot) <br> [CLI](https://github.com/Sacred-Protocol/sacred-cli-polkadot) | In the application proposal, part of the verification mentions authenticating with Twitter. This has been omitted in the delivery as we cannot do oAuth on-chain. Twitter authentication will be part of the next Milestone with the FrontEnd UI. |
 
 **Additional Information**
 
