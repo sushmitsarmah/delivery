@@ -1,131 +1,137 @@
 # Milestone Delivery 📬
 
-**The delivery is according to the official [milestone delivery guidelines](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/delivery-guidelines.md).**  
+**The delivery is according to the official [milestone delivery guidelines](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/delivery-guidelines.md).**
 
-* **Application Document:** https://github.com/Polkadot-Fast-Grants/apply/pull/10
-* **Milestone Number:** 1
+* **Application Document:** https://github.com/Polkadot-Fast-Grants/apply/pull/10  
+* **Milestone Number:** 1  
 * **Polkadot Asset Hub Address:** 1U3JboaBjPViEFDwwzKpFLVeV2LHQx9Jy31FuMgHuRBnmxq
 
-**Context**
+---
 
-PowerGrid Network Milestone 1 delivers the core smart contract infrastructure for our decentralized virtual power plant solution on Polkadot. This milestone establishes the fundamental blockchain layer that enables device registration, grid event coordination, token-based rewards, and decentralized governance. These smart contracts form the foundation for coordinating thousands of smart home devices to provide grid services while incentivizing user participation through our $PWGD token economy.
+## Context
 
-The delivered contracts create a complete ecosystem where homeowners can register their energy devices, participate in demand response events, earn rewards for grid services, and participate in network governance - all built on Polkadot's secure and scalable infrastructure.
+PowerGrid Network Milestone 1 delivers the core smart-contract infrastructure for our decentralized virtual power plant on Polkadot. We now have fully functional ink! 5.1 contracts for device onboarding, grid-event coordination, tokenized rewards, and on-chain governance—providing a production-ready foundation for coordinating thousands of home energy devices and rewarding grid services through the $PWGD economy.
 
-**Deliverables**
+This stack lets homeowners register their devices, participate in demand-response events, earn rewards, and steer network governance—all secured by Polkadot’s contracts parachain.
+
+---
+
+## Deliverables
 
 | Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 0a. | License | [MIT License](https://github.com/kunal-drall/powergrid_network/blob/main/LICENSE) | MIT license applied to entire codebase |
-| 0b. | Documentation | [Complete README.md](https://github.com/kunal-drall/powergrid_network/blob/main/README.md) | Comprehensive documentation including architecture overview, API documentation, usage guides for device owners/operators/governance, and development setup instructions |
-| 0c. | Testing and Testing Guide | [Test Suite](https://github.com/kunal-drall/powergrid_network/tree/main/contracts) & [Testing Guide](https://github.com/kunal-drall/powergrid_network/blob/main/README.md#-testing) | **19 comprehensive tests**: 14 unit tests across all contracts (5 for Resource Registry, 3 for Grid Service, 6 for PowerGrid Token) + **5 integration tests** validating complete user journey and cross-contract interactions. Run with `./scripts/test-all.sh` |
-| 1. | Smart Contract Development | [Smart Contracts](https://github.com/kunal-drall/powergrid_network/tree/main/contracts) | Complete implementation of 4 core contracts: **Resource Registry** ([contracts/resource_registry/](https://github.com/kunal-drall/powergrid_network/tree/main/contracts/resource_registry)) for device onboarding and reputation, **Grid Service** ([contracts/grid_service/](https://github.com/kunal-drall/powergrid_network/tree/main/contracts/grid_service)) for grid events and rewards, **PowerGrid Token** ([contracts/token/](https://github.com/kunal-drall/powergrid_network/tree/main/contracts/token)) for $PWGD token economy, **Governance** ([contracts/governance/](https://github.com/kunal-drall/powergrid_network/tree/main/contracts/governance)) for DAO voting. All written in **ink! v5.1**, with optimized WASM artifacts and comprehensive test coverage |
+| --- | --- | --- | --- |
+| 0a. | License | [MIT License](https://github.com/kunal-drall/powergrid_network/blob/main/LICENSE) | MIT applies to the entire repository |
+| 0b. | Documentation | [Project README](https://github.com/kunal-drall/powergrid_network/blob/main/README.md) · [Setup & Testing Guide](https://github.com/kunal-drall/powergrid_network/blob/main/docs/setup-and-testing.md) | Architecture, APIs, governance/oracle guides, OS-specific setup, Docker workflow |
+| 0c. | Testing & Guide | [Tests](https://github.com/kunal-drall/powergrid_network/tree/main/contracts) · [Testing section](https://github.com/kunal-drall/powergrid_network/blob/main/docs/setup-and-testing.md#3-build-and-test-workflow) | **24 automated tests**: 16 unit tests (5 Resource Registry, 6 Grid Service, 5 PowerGrid Token) + **8 integration/E2E tests** (4 simulation + 4 real ink! E2E). Run `./scripts/test-all.sh` (workspace) and `./scripts/test-integration.sh` (E2E) |
+| 1. | Smart Contract Development | [Contracts directory](https://github.com/kunal-drall/powergrid_network/tree/main/contracts) | Full implementation of **Resource Registry**, **Grid Service**, **PowerGrid Token**, **Governance** in ink! 5.1 with optimized Wasm artifacts and comprehensive coverage |
 
-**Technical Achievements**
+---
 
-- **4 Production-Ready Smart Contracts**: Complete implementation with cross-contract integration
-- **19 Comprehensive Tests**: 14 unit tests + 5 integration tests with 100% test coverage across all critical functionality  
-- **Complete User Journey Validation**: Integration tests verify the full user journey from device registration → grid participation → reward distribution → governance participation
-- **65% WASM Optimization**: Efficient contracts (12-18KB optimized binaries)
-- **Type-Safe Architecture**: Zero unsafe operations, comprehensive error handling
-- **Build Automation**: Complete CI/CD ready infrastructure with `./scripts/build-all.sh`
-- **Integration Test Suite**: Real validation of cross-contract interactions without placeholder assertions
-- **Development Environment**: Ready for local testing and testnet deployment
+## Technical Achievements
 
-**Contract Specifications**
+- **4 production-ready ink! contracts** with cross-contract wiring and payable constructors for deployment endowments  
+- **24 automated tests** in CI-ready scripts (`build-all`, `test-all`, `test-integration`)  
+- **Real ink! E2E coverage**—contracts deployed to a local Substrate node via `ink_e2e`, proving actual cross-contract execution  
+- **Complete user journey validation** from device registration → grid event → reward minting → governance update  
+- **Optimized Wasm artifacts** (≈12–18 KB) with ink! toolchain 5.1.1 and `cargo-contract` 5.0.1  
+- **New developer experience**: Docker-based environment, `/tmp` target dir guidance for limited storage, transparent logging in tests  
+- **Robust error handling and type-safe design**—all public APIs return descriptive errors matching business logic  
 
-1. **Resource Registry Contract** (17.4KB optimized):
-   - Device registration with metadata and staking requirements
-   - Reputation scoring based on performance metrics
-   - Cross-contract authorization for grid services
-   - 5 comprehensive unit tests covering all registration workflows
+---
 
-2. **Grid Service Contract** (15.8KB optimized):
-   - Grid event creation and lifecycle management
-   - Participation tracking with energy contribution recording
-   - Reward calculation with efficiency bonuses
-   - 3 unit tests covering event workflows and verification
+## Contract Specifications
 
-3. **PowerGrid Token Contract** (18.2KB optimized):
-   - ERC-20 compatible $PWGD token implementation
-   - Controlled minting/burning for reward distribution
-   - Role-based permissions for authorized operations
-   - 6 comprehensive tests covering all token operations
+1. **Resource Registry** (≈17 KB Wasm)  
+   - Device onboarding with stake validation and metadata  
+   - Reputation tracking & authorized caller management  
+   - 5 unit tests covering happy paths, insufficient stake, caller permissions
 
-4. **Governance Contract** (12.2KB optimized):
-   - Proposal creation and voting mechanisms
-   - Configurable quorum requirements and voting periods
-   - Parameter update capabilities for network management
-   - Complete governance lifecycle implementation
+2. **Grid Service** (≈16 KB Wasm)  
+   - Grid-event lifecycle, participation, verification, and reward triggers  
+   - Reputation-weighted rewards with bonus multipliers  
+   - 6 unit tests addressing creation, participation, verification, automation logic
 
-**Integration Test Validation**
+3. **PowerGrid Token ($PWGD)** (≈18 KB Wasm)  
+   - PSP22-compliant rewards token with mint/burn roles  
+   - Admin pause & allowance checks  
+   - 5 unit tests validating mint, burn, transfers, approvals, role gating
 
-The milestone includes **comprehensive integration tests** that validate the complete user journey as requested by community feedback:
+4. **Governance** (≈12 KB Wasm)  
+   - Proposal create/vote/queue/execute with quorum and timelock  
+   - Registry/grid parameter updates via a typed proposal enum  
+   - E2E tests ensure voting → queue → execute works with real block/timestamp progress
 
-1. **`test_complete_user_journey()`** - Validates all 5 steps of the user flow:
-   - ✅ User registers device in ResourceRegistry with stake
-   - ✅ Admin creates grid event in GridService 
-   - ✅ User participates in grid event with energy contribution
-   - ✅ Participation verified and rewards distributed via Token contract
-   - ✅ User stakes tokens and participates in governance
+---
 
-2. **`test_data_flow_integration()`** - Tests complete data flow across all contracts
-3. **`test_error_handling_integration()`** - Validates error scenarios across the system
-4. **`test_scalability_integration()`** - Tests system scalability with multiple users/events
-5. **`test_cross_contract_integration()`** - Verifies cross-contract interactions and state consistency
+## Integration & E2E Validation
 
-**Run integration tests with:**
+We provide **eight** integration tests under `contracts/integration-tests`:
+
+### Real ink! E2E Tests (`--features e2e-tests`)
+1. `test_real_contract_deployments` – Deploys all contracts to a live node with endowments  
+2. `test_cross_contract_deployment_dependencies` – Validates dependency ordering (Token → Registry → Grid)  
+3. `test_device_registration_and_rewards` – Full rewards flow from registration through minting  
+4. `test_governance_updates_registry` – Proposal vote/queue/execute updating Registry parameters
+
+### Simulation Tests (no feature flag)
+5. `test_complete_user_journey` – 5-step logical journey (device → event → reward → governance)  
+6. `test_data_flow_integration` – Cross-contract data propagation  
+7. `test_error_handling_integration` – Failure paths and validation  
+8. `test_scalability_integration` – Multi-user/multi-event scenarios
+
+Run them all with logging:
+
 ```bash
-cd contracts/integration-tests
-cargo test --verbose
+CARGO_TARGET_DIR=/tmp/cargo-target cargo test -p integration-tests --features e2e-tests -- --nocapture
 ```
 
+---
 
-**Additional Information**
+## Additional Information
 
-**Development Status**: Milestone 1 is complete and production-ready. All smart contracts have been built, tested, and optimized for deployment. The codebase includes comprehensive documentation, automated testing, deployment scripts, and **real integration tests** that validate the complete user journey without placeholder assertions.
+- **Development status**: Milestone 1 is production-ready; contracts and tests are stable on `main`.  
+- **Community feedback**: Addressed requests for “no placeholders” by delivering real E2E deployment tests with actual Wasm execution.  
+- **Next steps**: Milestone 2 targets device firmware integrations and live telemetry ingestion.  
+- **Repository status**: `main` branch contains the final milestone code, including Docker support.  
+- **Build system**: Automated scripts (`setup.sh`, `run-node.sh`, `build-all.sh`, `test-all.sh`, `test-integration.sh`) ease onboarding.  
+- **Docker**: A streamlined dev image (`powergrid-dev`) with Rust, ink! tooling, and `substrate-contracts-node` installed.  
+- **Testing summary**: 16 unit tests + 8 integration/E2E tests = 24 total, all passing.
 
-**Community Feedback Integration**: The integration tests directly address community feedback requesting validation of the complete user journey. The `test_complete_user_journey()` function provides concrete proof that all contract interactions work together as designed.
+---
 
-**Next Steps**: Milestone 2 will focus on smart device integration, connecting real hardware (smart plugs/sensors) to the blockchain infrastructure delivered in Milestone 1.
+## 🔬 How to Test Milestone 1
 
-**Repository Status**: The main branch contains the complete Milestone 1 deliverables with commit hash representing the final delivery state including integration tests.
+### 1. Prepare environment (Ubuntu/macOS)
+Follow [`docs/setup-and-testing.md`](https://github.com/kunal-drall/powergrid_network/blob/main/docs/setup-and-testing.md) or run:
 
-**Testing**: All 19 tests pass successfully (14 unit + 5 integration), covering device registration, grid event participation, token operations, governance workflows, and complete user journey validation. The test suite can be executed with `./scripts/test-all.sh` in the repository root.
+```bash
+./scripts/setup.sh
+```
 
-**Build System**: Complete build automation is provided with optimized WASM compilation, comprehensive error handling, and development environment setup scripts.
+### 2. Start local node
+```bash
+./scripts/run-node.sh
+```
+(leave it running in a separate terminal for E2E tests)
 
-## 🔬 How to Test Milestone 1
+### 3. Build all contracts
+```bash
+./scripts/build-all.sh
+```
 
-To reproduce the results of Milestone 1 on a clean Linux environment:
+### 4. Run workspace tests (unit + docs)
+```bash
+./scripts/test-all.sh
+```
 
-1. **Run setup script** (installs Rust, wasm target, cargo-contract v5.0.1, substrate-contracts-node):
-   ```bash
-   ./scripts/setup.sh
-   ```
+### 5. Run E2E integration suite
+```bash
+./scripts/test-integration.sh
+```
 
-2. **Start a local Substrate contracts node** in a separate terminal:
-   ```bash
-   ./scripts/run-node.sh
-   ```
+Expected outcomes:
+- Optimized Wasm artifacts in `target/ink/<contract>/`
+- All 16 unit tests and 8 integration/E2E tests passing with detailed logs
+- Governance proposal E2E demonstrates vote → queue → execute on a live node
 
-3. **Build all contracts**:
-   ```bash
-   ./scripts/build-all.sh
-   ```
-
-4. **Run all unit and integration tests**:
-   ```bash
-   ./scripts/test-all.sh
-   ```
-
-5. **Run integration tests**:
-   ```bash
-   ./scripts/test-integration.sh
-   ```
-
-If all steps succeed, you should see:
-- Optimized WASM artifacts generated in `target/ink/<contract_name>/`
-- ✅ Build success messages for each contract
-- ✅ Test results showing all 14 unit tests and 5 integration tests passing
-
+---
