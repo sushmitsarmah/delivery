@@ -27,6 +27,10 @@ The platform now supports the full NFT lifecycle from creation to trading with r
 
 | Number | Deliverable | Link | Notes |
 | ------------- | ------------- | ------------- |------------- |
+| 0a. | License |[License](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/LICENSE)| Apache 2.0 License |
+| 0b. | Documentation |[Documentation](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/README.md)| Readme documentation |
+| 0c. | User Testing Guide |[Testing Guide](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/USER_TESTING_GUIDE.md)| Usser Testing Guide |
+| 0d. | Article |[Article](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/ARTICLE_AI_DRIVEN_NFTS_POLKADOT.md)| Publication on AI-driven NFTs in Polkadot |
 | 1a. | NFT Mozaic API Integration |[Asset Hub SDK Integration](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/src/web3/lib/sdk/UniqueSDKProvider.tsx)| Complete integration of NFT Mozaic API using Unique SDK for Asset Hub NFT creation, minting, and trading operations |
 | 1b. | NFT Creation & IPFS Storage |[Create NFT Page](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/src/pages/Create.tsx)| NFT collection creation and token minting using Asset Hub nfts pallet with Pinata IPFS for metadata storage |
 | 1c. | Multi-Network NFT Trading |[Gallery & Trade History](https://github.com/sushmitsarmah/mozaic_dot_nfts/blob/main/src/pages/Gallery.tsx)| Real blockchain NFT trading across 6 Polkadot networks with authentic trade history via NFT Mozaic API |
