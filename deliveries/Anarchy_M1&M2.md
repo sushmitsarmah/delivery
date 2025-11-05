@@ -1,5 +1,33 @@
 Milestone Delivery 1&2 0a.0d (including evidence of completion in article): https://docs.google.com/document/d/1ha8ndLes1KCiMR9kJuLYgdgFRue2ds7cJ5Y5C4otNK0/edit?tab=t.0
 
+0a.
+License
+https://github.com/anarchybuild/anarchy-frontend/blob/main/LICENSE
+
+0b.
+Documentation
+https://github.com/anarchybuild/anarchy/blob/main/README.md
+
+https://github.com/anarchybuild/anarchy/blob/main/Tech%20Specs.md
+
+https://github.com/anarchybuild/anarchy-frontend/blob/main/TEST_SUMMARY.md
+
+https://github.com/anarchybuild/anarchy-frontend/blob/main/TEST_DOCUMENTATION.md 
+
+https://github.com/anarchybuild/anarchy-frontend/blob/main/TESTS_README.md
+
+0c.
+Testing
+https://github.com/anarchybuild/anarchy-frontend/blob/main/TESTING_QUICKSTART.md
+
+0d.
+Article
+[Here](https://docs.google.com/document/d/1ArrkTk7t7LmsVFaE3PUVd_B-xMvSCrW5sndu1H1U2gk/edit?tab=t.0)
+
+
+
+
+
 # Milestone Delivery 1📬
 
 **The delivery is according to the official [milestone delivery guidelines](https://github.com/Polkadot-Fast-Grants/delivery/blob/master/delivery-guidelines.md).**  
